@@ -1,40 +1,53 @@
-# Titanic Dataset Analysis
+# 🚢 Titanic Dataset Analysis
 
 ## 📂 Dataset
-Link: https://www.kaggle.com/datasets/yasserh/titanic-dataset
-This dataset is the Kaggle “Titanic” dataset. It contains passenger information (age, gender, class, fare, embarked port, etc.) and whether they survived or not.  
+This project uses the [Titanic dataset](https://www.kaggle.com/datasets/yasserh/titanic-dataset).  
+It contains passenger information such as age, gender, ticket class, fare, number of relatives aboard, and whether they survived the Titanic disaster.
+
+---
 
 ## 📊 Visualizations
-Here are some of the plots produced:
 
-- Survival by Sex  
+### 1. Survival by Sex
+Shows how gender influenced survival chances.  
+![Survival by Sex](screenshots/survival_by_sex.png)
 
-![alt text](image.png)
-- Survival by Pclass  
+### 2. Survival by Passenger Class
+Compares survival across 1st, 2nd, and 3rd class passengers.  
+![Survival by Pclass](screenshots/survival_by_pclass.png)
 
-![alt text](image.png)
-- Age distribution: Survived vs Not  
+### 3. Age Distribution: Survived vs Not
+Compares age distributions of survivors and non-survivors.  
+![Age Distribution](screenshots/age_distribution.png)
 
-![alt text](image-1.png)
-- Fare paid: Survived vs Not  
+### 4. Fare Paid: Survived vs Not
+Shows the distribution of fares paid and its relationship to survival.  
+![Fare Boxplot](screenshots/fare_boxplot.png)
 
-![alt text](image-2.png)
-- Violin plot: Age by Pclass & Survival  
+### 5. Age by Pclass & Survival (Violin Plot)
+Shows how age varied across classes and survival status.  
+![Age by Pclass Violin](screenshots/age_pclass_violin.png)
 
-![alt text](image-3.png)
-- FacetGrid: Age distribution by Sex & Pclass  
+### 6. Age Distribution by Sex & Pclass with Survival (FacetGrid)
+Faceted KDE plots showing combined effect of sex, passenger class, and survival.  
+![Age FacetGrid](screenshots/age_facetgrid.png)
 
-![alt text](image-4.png)
+---
 
 ## 🔎 Insights
-- Female passengers had much higher survival rates.  
-- Passenger class strongly influenced survival: 1st class >> 2nd class >> 3rd class.  
-- Younger passengers tend to survive more.  
-- Higher fare correlates (though not perfectly) with higher survival (but may be confounded by class).  
-- Some combinations (female + 1st class) had highest survival probabilities.
+- **Gender effect:** Female passengers had a much higher survival rate than males.  
+- **Class effect:** Passengers in 1st class survived more than those in 2nd and 3rd.  
+- **Age effect:** Children and younger passengers had better survival rates.  
+- **Fare effect:** Higher fares (correlated with class) generally meant better survival chances.  
+- **Combined effects:** Being a female in 1st class gave the highest survival probability, while males in 3rd class had the lowest.  
+
+---
 
 ## 🧰 Project Files
-- `titanic_analysis.ipynb` (notebook with code) or `titanic_analysis.py`  
-- `titanic.csv` (dataset)  
-- `README.md`  
-- `screenshots/` (folder with images of graphs)  
+- `titanic_analysis.ipynb` → Jupyter Notebook with analysis & plots  
+- `titanic.csv` → Dataset file  
+- `requirements.txt` → Dependencies (pandas, seaborn, matplotlib, jupyter)  
+- `README.md` → Documentation  
+- `screenshots/` → Saved plot images  
+
+---
